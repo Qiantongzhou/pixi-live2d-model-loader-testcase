@@ -1,0 +1,26 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "兔孜.moc3",
+		"Textures": [
+			"兔孜.8192/texture_00.png",
+			"兔孜.8192/texture_01.png",
+			"兔孜.8192/texture_02.png",
+			"兔孜.8192/texture_03.png"
+		],
+		"Physics": "兔孜.physics3.json",
+		"DisplayInfo": "兔孜.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

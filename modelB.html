@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Model B</title>
+  <!-- Load Cubism Core v2 -->
+  <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pixi.js@6.5.2/dist/browser/pixi.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display/dist/index.min.js"></script>
+</head>
+<body>
+  <canvas id="canvasB"></canvas>
+  <script>
+    const modelBUrl = "live2d-models/兔孜/兔孜.model3.json";
+    (async function() {
+      const app = new PIXI.Application({
+        view: document.getElementById("canvasB"),
+        autoStart: true,
+        resizeTo: window
+      });
+      const modelB = await PIXI.live2d.Live2DModel.from(modelBUrl);
+      app.stage.addChild(modelB);
+      // Additional model settings can go here...
+    })();
+  </script>
+</body>
+</html>
